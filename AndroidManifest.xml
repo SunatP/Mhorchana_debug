@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="39"
+    android:versionName="2.0.1"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
+    package="com.thaialert.app"
+    platformBuildVersionCode="28"
+    platformBuildVersionName="9">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="team.odds.thaialert.app.permission.C2D_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="team.odds.thaialert.app.permission.C2D_MESSAGE" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="oppo.permission.OPPO_COMPONENT_SAFE" />
+
+    <uses-permission
+        android:name="com.huawei.permission.external_app_settings.USE_COMPONENT" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <application
+        android:theme="@ref/0x7f0e0007"
+        android:label="@ref/0x7f0d0028"
+        android:icon="@ref/0x7f0b0002"
+        android:name="team.odds.thaialert.app.MainApplication"
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <activity
+            android:theme="@ref/0x7f0e00d1"
+            android:label="@ref/0x7f0d0028"
+            android:name="team.odds.thaialert.app.SplashActivity"
+            android:launchMode="2"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.nuuneoi.lib.contacttracer.noti" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="filter_react_native">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="morchana"
+                    android:host="app" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0d0028"
+            android:name="team.odds.thaialert.app.MainActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x10" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCINS2dyuBipK8MZzOQnzyKdrS2I1_b5I4" />
+
+        <meta-data
+            android:name="com.transistorsoft.locationmanager.license"
+            android:value="47ab2c45c3db6e20a59e1f3d02b8d2ac8571b45e723610efbbdb601164cd2fa8" />
+
+        <meta-data
+            android:name="com.transistorsoft.locationmanager.ENCRYPTION_PASSWORD"
+            android:value="com.thaialert.app" />
+
+        <meta-data
+            android:name="com.dieam.reactnativepushnotification.notification_channel_name"
+            android:value="Morchana" />
+
+        <meta-data
+            android:name="com.dieam.reactnativepushnotification.notification_channel_description"
+            android:value="คุณจะได้รับการแจ้งเตือนทันที เมื่อคุณได้ไปใกล้ชิดกับคนที่มีความเสี่ยง" />
+
+        <meta-data
+            android:name="com.dieam.reactnativepushnotification.notification_color"
+            android:resource="@ref/0x0106000b" />
+
+        <service
+            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="io.sentry.auto-init"
+            android:value="false" />
+
+        <activity
+            android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+        <service
+            android:name="com.nuuneoi.lib.contacttracer.service.TracerService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.nuuneoi.lib.contacttracer.receiver.BootCompletedReceiver"
+            android:enabled="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <action
+                    android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <action
+                    android:name="com.thaialert.servicehealthcheck" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.nuuneoi.lib.contacttracer.receiver.NotificationReceiver"
+            android:enabled="true" />
+
+        <service
+            android:name="com.nuuneoi.lib.contacttracer.service.SchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.learnium.RNDeviceInfo.RNDeviceReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.imagepicker.FileProvider"
+            android:exported="false"
+            android:authorities="com.thaialert.app.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f100001" />
+        </provider>
+
+        <provider
+            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+            android:exported="false"
+            android:authorities="com.thaialert.app.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f100000" />
+        </provider>
+
+        <provider
+            android:name="com.RNFetchBlob.Utils.FileProvider"
+            android:exported="false"
+            android:authorities="com.thaialert.app.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f100001" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f0e00d2"
+            android:name="com.transistorsoft.locationmanager.activity.TSLocationManagerActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <service
+            android:name="com.transistorsoft.locationmanager.service.TrackingService" />
+
+        <service
+            android:name="com.transistorsoft.locationmanager.service.LocationRequestService" />
+
+        <service
+            android:name="com.transistorsoft.locationmanager.service.HeartbeatService" />
+
+        <service
+            android:name="com.transistorsoft.locationmanager.service.ActivityRecognitionService" />
+
+        <service
+            android:name="com.transistorsoft.locationmanager.service.GeofencingService" />
+
+        <service
+            android:name="com.transistorsoft.locationmanager.service.BackgroundTaskService" />
+
+        <receiver
+            android:name="com.transistorsoft.locationmanager.scheduler.ScheduleAlarmReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.transistorsoft.locationmanager.scheduler.ScheduleService" />
+
+        <service
+            android:name="com.transistorsoft.locationmanager.scheduler.ScheduleJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.transistorsoft.locationmanager.BootReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.transistorsoft.locationmanager.util.LogFileProvider"
+            android:exported="false"
+            android:authorities="com.thaialert.app.tslocationmanager.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f100003" />
+        </provider>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:permission="android.permission.INSTALL_PACKAGES"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f0e0008"
+            android:name="com.intentfilter.androidpermissions.PermissionsActivity"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.thaialert.app.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f080004" />
+
+        <receiver
+            android:name="com.transistorsoft.tsbackgroundfetch.FetchAlarmReceiver" />
+
+        <service
+            android:name="com.transistorsoft.tsbackgroundfetch.FetchJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.transistorsoft.tsbackgroundfetch.BootReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="io.sentry.android.core.SentryInitProvider"
+            android:exported="false"
+            android:authorities="com.thaialert.app.SentryInitProvider" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="1" />
+    </application>
+</manifest>
